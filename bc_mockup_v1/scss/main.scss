@@ -1,0 +1,34 @@
+@import "config";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap");
+@import "index";
+@import "menu";
+
+body,
+html {
+  font-family: "Fira Mono", monospace, sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-size: 1rem;
+  background-color: $primary-color;
+  scroll-behavior: smooth;
+}
+.mobile-show {
+  display: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+h1,
+h2,
+a,
+p {
+  color: $text-color;
+}
+
+h1 {
+  position: relative;
+  @include slide-in;
+}
